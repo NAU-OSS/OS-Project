@@ -50,6 +50,15 @@ dependencies {
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core
 
+    // Unit Testing
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "androidx.arch.core:core-testing:2.2.0" // For LiveData testing
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+
+    // Mockito (for mocking Repository & Observer)
+    testImplementation "org.mockito:mockito-core:4.8.1"
+    testImplementation "org.mockito.kotlin:mockito-kotlin:4.1.0"
+
     implementation libs.androidx.room.runtime
     implementation libs.androidx.room.ktx
     kapt libs.androidx.room.compiler
