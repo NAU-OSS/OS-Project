@@ -1,7 +1,7 @@
 package com.example.finalproject
 
 import android.os.Bundle
-import android.view.Menu
+import android.util.Log
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -10,7 +10,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.example.finalproject.data.repository.FactsRepository
 import com.example.finalproject.databinding.ActivityMainBinding
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,9 +40,25 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        // test API calls (
+        val factsRepository = FactsRepository()
+
+        // fetch facts using coroutines (delete this later!)
+        lifecycleScope.launch {
+            try {
+                // fetch a random fact
+                val randomFact = factsRepository.fetchRandomFact()
+                Log.d("MainActivity", "Random Fact: ${randomFact.text}")
+
+                // fetch the fact for today
+                val factForToday = factsRepository.fetchFactForToday()
+                Log.d("MainActivity", "Fact for Today: ${factForToday.text}")
+            } catch (e: Exception) {
+                Log.e("MainActivity", "Error fetching facts: ${e.message}")
+            }
+        }
     }
-
-
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
