@@ -47,7 +47,7 @@ class DailyFactFragment : Fragment() {
             textHome.text = fact.text
 
             val favoriteList = factViewModel.favoriteFacts.value ?: emptyList()
-            val isFavorite = favoriteList.any { it.id == fact.id }
+            var isFavorite = favoriteList.any { it.id == fact.id }
 
             // set the button test based on favorite status
             addToFavoritesButton.text = if(isFavorite) {
@@ -58,11 +58,8 @@ class DailyFactFragment : Fragment() {
 
             // handle favorites button click listener
             addToFavoritesButton.setOnClickListener {
-                val currentFavoriteList = factViewModel.favoriteFacts.value ?: emptyList()
-                val currentFavorite = currentFavoriteList.any { it.id == fact.id }
-
                 // if its in favorites then the button will display removed
-                if (currentFavorite) {
+                if (isFavorite) {
                     factViewModel.removeFromFavorites(fact)
                     Toast.makeText(requireContext(), "Removed from Favorites!", Toast.LENGTH_SHORT).show()
                     addToFavoritesButton.text = "Add to Favorites"
@@ -71,6 +68,8 @@ class DailyFactFragment : Fragment() {
                     Toast.makeText(requireContext(), "Added to Favorites!", Toast.LENGTH_SHORT).show()
                     addToFavoritesButton.text = "Remove From Favorites"
                 }
+
+                isFavorite = !isFavorite
             }
         }
 
