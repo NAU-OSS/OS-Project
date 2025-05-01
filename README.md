@@ -132,4 +132,4 @@ However, feel free to fork the repository or open an issue with feedback or ques
 Reach us on GitHub:
 
 - [@kkarissa](https://github.com/kkarissa)  
-- [@peterhilbert](https://github.com/peterhilbert)
+- [@pehilbert](https://github.com/pehilbert)
