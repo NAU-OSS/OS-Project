@@ -30,16 +30,22 @@ FactDrop is a fun Android app that delivers random, silly facts to brighten your
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots CHANGE THIS
 
-<!-- Add screenshots when available -->
-- Browse Facts Screen  
-- Today’s Fact Screen  
-- Favorites Screen  
+- Browse Facts Screen
+  
+  ![browse_fact](https://github.com/user-attachments/assets/a2b645df-334c-45c3-9a89-24c3f3b5f8c0)
 
+- Today’s Fact Screen
+  
+  ![daily_fact](https://github.com/user-attachments/assets/2d82d924-16ea-4847-9a23-3c1dfccb2826)
+
+- Favorites Screen
+   
+  ![favorites_fact](https://github.com/user-attachments/assets/486bc8c8-f1cf-45b4-af03-1ae53ea9a52c)
 ---
 
-## 📦 Requirements
+## 📦 Requirements CHECK THIS 
 
 - Android Studio (Electric Eel or newer)
 - Android SDK 33+
@@ -52,5 +58,78 @@ FactDrop is a fun Android app that delivers random, silly facts to brighten your
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/factdrop.git
-   cd factdrop
+   git clone https://github.com/kkarissa/CS377-FinalProject.git
+   cd CS377-FinalProject
+2. **Open the Project in Android Studio**
+    - Launch Android Studio
+    - Click `File > Open`
+    - Select the `CS377-FinalProject` folder
+3. **Build and Run**
+    - Let Gradle sync and finish building
+    - Connect a device or use an emulator
+    - Click Run ▶️ to install and launch the app
+4. **Using the App**
+    - Use the hamburger menu to navigate
+    - Browse facts, check today's fact, and save to favorites
+  
+---
+
+## 📁 Project Structure FIX THIS TO MATCH!!!!!!!
+
+```
+CS377-FinalProject/
+├── app/
+│   ├── java/com/example/finalproject/
+│   │   ├── api/                # Retrofit API interface
+│   │   ├── database/           # Room database and DAO
+│   │   ├── model/              # Fact data class
+│   │   ├── repository/         # Repository layer
+│   │   ├── ui/                 # Fragments and adapters
+│   │   └── viewmodel/          # FactViewModel
+│   └── res/                    # Layouts, navigation, strings, etc.
+└── build.gradle                # Project configuration
+```
+
+---
+
+## 🧩 Key Libraries Used
+
+- [Retrofit](https://square.github.io/retrofit/) – API client  
+- [Room](https://developer.android.com/jetpack/androidx/releases/room) – Local database  
+- [LiveData & ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) – State management  
+- [RecyclerView](https://developer.android.com/jetpack/androidx/releases/recyclerview) – Displaying favorites  
+- [Navigation Component](https://developer.android.com/guide/navigation) – In-app navigation  
+
+---
+
+## 🧪 Troubleshooting
+
+| Issue                  | Solution                                          |
+|------------------------|---------------------------------------------------|
+| Project fails to build | Run `File > Invalidate Caches / Restart`         |
+| API response is null   | Check your internet connection                   |
+| Favorites not saved    | Ensure Room DB permissions and setup are correct |
+| App crashes on launch  | Confirm all Gradle dependencies are synced       |
+
+---
+
+## 👥 Authors
+
+- **Karissa Smallwood** – UI/UX Design, App Navigation  
+- **Peter Hilbert** – API Integration, Database Management  
+
+---
+
+## 🤝 Contributing
+
+This project was built for academic purposes and is not actively maintained for contributions.  
+However, feel free to fork the repository or open an issue with feedback or questions.
+
+---
+
+## 📫 Contact
+
+Reach us on GitHub:
+
+- [@kkarissa](https://github.com/kkarissa)  
+- [@peterhilbert](https://github.com/peterhilbert)
