@@ -30,7 +30,7 @@ FactDrop is a fun Android app that delivers random, silly facts to brighten your
 
 ---
 
-## 📸 Screenshots CHANGE THIS
+## 📸 Screenshots
 
 - Browse Facts Screen
   
@@ -48,7 +48,7 @@ FactDrop is a fun Android app that delivers random, silly facts to brighten your
 
 ---
 
-## 📦 Requirements CHECK THIS 
+## 📦 Requirements
 
 - Android Studio (Electric Eel or newer)
 - Android SDK 33+
