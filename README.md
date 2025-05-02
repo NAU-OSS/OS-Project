@@ -34,15 +34,18 @@ FactDrop is a fun Android app that delivers random, silly facts to brighten your
 
 - Browse Facts Screen
   
-  ![browse_fact](https://github.com/user-attachments/assets/a2b645df-334c-45c3-9a89-24c3f3b5f8c0)
+  ![browse_fact](https://github.com/user-attachments/assets/1ede1f95-b56c-4e86-b934-560df02a69a7)
+
 
 - Today’s Fact Screen
   
-  ![daily_fact](https://github.com/user-attachments/assets/2d82d924-16ea-4847-9a23-3c1dfccb2826)
+  ![daily_fact](https://github.com/user-attachments/assets/ff894898-0d05-44a4-ab28-dd87e597fd43)
+
 
 - Favorites Screen
-   
-  ![favorites_fact](https://github.com/user-attachments/assets/486bc8c8-f1cf-45b4-af03-1ae53ea9a52c)
+
+  ![favorites_fact](https://github.com/user-attachments/assets/1367cbee-4385-4af7-8ac7-6f6f0622e65c)
+
 ---
 
 ## 📦 Requirements CHECK THIS 
