@@ -10,4 +10,7 @@
     <string name="menu_daily">Today\'s Fact</string>
     <string name="menu_browse">Browse Facts</string>
     <string name="menu_favorites">Favorites</string>
+    <string name="generate_random_fact">Generate Random Fact</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="remove">Remove</string>
 </resources>

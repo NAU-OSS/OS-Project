@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#F4F8FB"
     android:padding="12dp">
 
     <TextView
@@ -12,7 +11,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textColor="#333333"
         android:textSize="22sp"
         android:textStyle="bold"
         android:maxLines="20"
@@ -27,8 +25,7 @@
         android:id="@+id/remove_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remove"
-        android:backgroundTint="#4A90E2"
+        android:text="@string/remove"
         app:cornerRadius="16dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
