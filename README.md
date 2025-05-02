@@ -74,31 +74,30 @@ FactDrop is a fun Android app that delivers random, silly facts to brighten your
   
 ---
 
-## 📁 Project Structure FIX THIS TO MATCH!!!!!!!
+## 📁 Project Structure
 
 ```
 CS377-FinalProject/
-├── app/
-│   ├── java/com/example/finalproject/
-│   │   ├── api/                # Retrofit API interface
-│   │   ├── database/           # Room database and DAO
-│   │   ├── model/              # Fact data class
-│   │   ├── repository/         # Repository layer
-│   │   ├── ui/                 # Fragments and adapters
-│   │   └── viewmodel/          # FactViewModel
-│   └── res/                    # Layouts, navigation, strings, etc.
-└── build.gradle                # Project configuration
+├── app/src/main
+│   ├── java/com/example/finalproject/ # Kotlin source code
+│   │   ├── data/                      # Data-related packages
+|   |   |   ├── database/              # Room database classes
+|   |   |   ├── model/                 # Main Fact data class
+|   |   |   ├── network/               # Retrofit classes
+|   |   |   └── repository/            # FactRepository class
+│   │   └── ui/                        # Main fragment classes
+|   |       ├── adapter/               # Adapter class for favorites RecyclerView
+|   |       └── viewmodel/             # FactViewModel class
+│   └── res/                           # Layouts, navigation, strings, etc.
+└── build.gradle                       # Project configuration
 ```
 
 ---
 
-## 🧩 Key Libraries Used FIX THIS PROBS NOT NEEDED
+## 🧩 Key Libraries Used
 
 - [Retrofit](https://square.github.io/retrofit/) – API client  
 - [Room](https://developer.android.com/jetpack/androidx/releases/room) – Local database  
-- [LiveData & ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) – State management  
-- [RecyclerView](https://developer.android.com/jetpack/androidx/releases/recyclerview) – Displaying favorites  
-- [Navigation Component](https://developer.android.com/guide/navigation) – In-app navigation  
 
 ---
 
