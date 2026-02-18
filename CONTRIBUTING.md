@@ -17,6 +17,23 @@ FactDrop is a simple MVVM-based Android app, so contributions that improve struc
 
 ---
 
+## 🎨 Code Style & Formatting
+
+- Follow standard Kotlin coding conventions  
+- Use meaningful variable and function names  
+- Keep business logic inside ViewModels and repositories (follow MVVM architecture)  
+- Use Android Studio’s default formatter before committing (`Code > Reformat Code`)  
+
+---
+
+## 📝 Documentation Standards
+
+- Update the README if adding new features  
+- Add comments for complex logic  
+- Keep documentation clear and concise
+
+---
+
 ## 🐛 How to Report a Bug
 
 Before opening a new issue:
@@ -97,15 +114,6 @@ The goal is to maintain clean structure, readable code, and a smooth user experi
 
 Please be respectful and constructive.  
 We welcome all skill levels and appreciate thoughtful contributions.
-
----
-
-## 📫 Contact
-
-Reach us on GitHub:
-
-- [@kkarissa](https://github.com/kkarissa)  
-- [@pehilbert](https://github.com/pehilbert)
 
 ---
 
